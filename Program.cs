@@ -14,15 +14,15 @@ public class Program : IEmployeeOperations
   static void Main(string[] args)
   {
     Program program = new Program(); // Membuat satu instance untuk digunakan di seluruh program
-    SeedData();  // Inisialisasi data karyawan
+    SeedData();  // Inisialisasi data karyawan awal
     bool running = true;
 
-    // Loop untuk menampilkan menu dan menjalankan program sampai user memilih Exit
+    // Loop untuk menjalankan program hingga user memilih keluar
     while (running)
     {
       int choice = ShowMenu();  // Menampilkan menu pilihan
 
-      // Menjalankan opsi sesuai pilihan user
+      // Menjalankan aksi berdasarkan pilihan user
       switch (choice)
       {
         case 0:
@@ -42,7 +42,7 @@ public class Program : IEmployeeOperations
           Console.WriteLine("\nExiting...");
           break;
         default:
-          Console.WriteLine("\nInvalid option. Try again.");  // Jika pilihan tidak valid (karena sudah menggunakan arrow seharusnya tidak ada)
+          Console.WriteLine("\nInvalid option. Try again.");  // Jika pilihan tidak valid
           break;
       }
     }
@@ -60,7 +60,7 @@ public class Program : IEmployeeOperations
       Console.Clear();
       Console.WriteLine("Choose an option:");
 
-      // Tampilkan pilihan menu
+      // Tampilkan pilihan menu dan sorot pilihan yang dipilih
       for (int i = 0; i < options.Length; i++)
       {
         if (i == selectedIndex)
@@ -75,9 +75,9 @@ public class Program : IEmployeeOperations
         }
       }
 
-      keyInfo = Console.ReadKey();  // Baca input keyboard
+      keyInfo = Console.ReadKey();  // Baca input dari keyboard
 
-      // Navigasi menggunakan panah atas dan bawah
+      // Navigasi menu menggunakan panah atas/bawah
       if (keyInfo.Key == ConsoleKey.UpArrow)
       {
         selectedIndex--;
@@ -110,6 +110,7 @@ public class Program : IEmployeeOperations
       Console.Write("\nEnter Employee ID: ");
       int id = Convert.ToInt32(Console.ReadLine());
 
+      // Validasi jika ID karyawan sudah ada
       if (employees.Any(e => e.EmployeeID == id))
       {
         Console.WriteLine("Employee ID already exists.");
@@ -121,6 +122,7 @@ public class Program : IEmployeeOperations
       Console.Write("Enter Full Name: ");
       string name = Console.ReadLine();
 
+      // Validasi nama tidak boleh kosong
       if (string.IsNullOrWhiteSpace(name))
       {
         Console.WriteLine("Name cannot be empty.");
@@ -131,6 +133,7 @@ public class Program : IEmployeeOperations
 
       Console.Write("Enter Birth Date (dd-MM-yyyy): ");
       DateTime birthDate;
+      // Validasi format tanggal lahir
       if (!DateTime.TryParseExact(Console.ReadLine(), "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out birthDate))
       {
         Console.WriteLine("Invalid date format.");
@@ -219,6 +222,7 @@ public class Program : IEmployeeOperations
       {
         Console.Write("Enter new Full Name: ");
         string newName = Console.ReadLine();
+        // Validasi nama tidak boleh kosong
         if (string.IsNullOrWhiteSpace(newName))
         {
           Console.WriteLine("Name cannot be empty.");
@@ -230,6 +234,7 @@ public class Program : IEmployeeOperations
 
         Console.Write("Enter new Birth Date (dd-MM-yyyy): ");
         DateTime newBirthDate;
+        // Validasi format tanggal lahir
         if (!DateTime.TryParseExact(Console.ReadLine(), "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out newBirthDate))
         {
           Console.WriteLine("Invalid date format.");
