@@ -1,0 +1,14 @@
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\bin\Debug\net8.0\netcore.exe
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\bin\Debug\net8.0\netcore.deps.json
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\bin\Debug\net8.0\netcore.runtimeconfig.json
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\bin\Debug\net8.0\netcore.dll
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\bin\Debug\net8.0\netcore.pdb
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.AssemblyInfoInputs.cache
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.AssemblyInfo.cs
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.csproj.CoreCompileInputs.cache
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.dll
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\refint\netcore.dll
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.pdb
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\netcore.genruntimeconfig.cache
+D:\Kerja\79\KONTRAK\Project\mitratech-test\netcore\obj\Debug\net8.0\ref\netcore.dll
